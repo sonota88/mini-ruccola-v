@@ -1,5 +1,8 @@
 This is a port of the compiler part of [vm2gol-v2 (Ruby version)](https://github.com/sonota88/vm2gol-v2).
 
+V言語でかんたんな自作言語のコンパイラを書いた  
+https://memo88.hatenablog.com/entry/mini_ruccola_vlang
+
 ```
   $ v version
 V 0.3.3 88de0de
