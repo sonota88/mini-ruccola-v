@@ -66,8 +66,7 @@ fn gen_expr_mult() {
 }
 
 fn gen_expr_eq() {
-	g_label_id++
-	label_id := g_label_id
+	label_id := get_label_id()
 
 	label_end := 'end_eq_${label_id}'
 	label_then := 'then_${label_id}'
@@ -88,8 +87,7 @@ fn gen_expr_eq() {
 }
 
 fn gen_expr_neq() {
-	g_label_id++
-	label_id := g_label_id
+	label_id := get_label_id()
 
 	label_end := 'end_neq_${label_id}'
 	label_then := 'then_${label_id}'
@@ -222,8 +220,7 @@ fn gen_while(fn_arg_names &Names, lvar_names &Names, stmt &List) {
 	expr := stmt.get(1)
 	stmts := stmt.get(2).listval
 
-	g_label_id++
-	label_id := g_label_id
+	label_id := get_label_id()
 
 	label_begin := 'while_${label_id}'
 	label_end := 'end_while_${label_id}'
