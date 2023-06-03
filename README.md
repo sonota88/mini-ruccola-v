@@ -18,12 +18,15 @@ cd mini-ruccola-v
 
 ```
   $ LANG=C wc -l mrcl_*.v lib/{types,utils}.v
-  420 mrcl_codegen.v
+  417 mrcl_codegen.v
   129 mrcl_lexer.v
   444 mrcl_parser.v
   173 lib/types.v
    50 lib/utils.v
- 1216 total
+ 1213 total
+
+  $ wc -l lib/json.v
+98 lib/json.v
 ```
 
 ---
