@@ -24,7 +24,7 @@ fn read_line(s string) string {
 }
 
 fn read_tokens(src string) []Token {
-	mut tokens_ := []Token{}
+	mut tokens := []Token{}
 
 	mut rest := src
 	for {
@@ -36,7 +36,7 @@ fn read_tokens(src string) []Token {
 		lineno := xs.get(0).intval
 		kind_str := xs.get(1).strval
 		val := xs.get(2).strval
-		tokens_ << Token{
+		tokens << Token{
 			kind: lib.to_kind(kind_str)
 			val: val
 			lineno: lineno
@@ -45,7 +45,7 @@ fn read_tokens(src string) []Token {
 		rest = rest[line.len..]
 	}
 
-	return tokens_
+	return tokens
 }
 
 // --------------------------------
