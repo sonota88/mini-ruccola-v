@@ -395,7 +395,7 @@ fn parse_var() &List {
 
 fn parse_func_def() &List {
 	consume_kw('func')
-	t := peek(0) // fn name
+	t := peek(0)
 	g_pos++
 	fn_name := t.val
 
