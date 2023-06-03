@@ -386,7 +386,7 @@ fn parse_var() &List {
 			consume_sym(';')
 		}
 		else {
-			panic('unsupported token (${peek(0)})')
+			panic('unexpected token (${peek(0)})')
 		}
 	}
 

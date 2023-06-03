@@ -28,7 +28,7 @@ fn rest(xs &List) &List {
 fn to_fn_arg_disp(names &Names, name string) int {
 	mut i := names.index(name)
 	if i == -1 {
-		panic('fn arg not found')
+		panic('function argument not found')
 	}
 	return i + 2
 }
@@ -36,7 +36,7 @@ fn to_fn_arg_disp(names &Names, name string) int {
 fn to_lvar_disp(names Names, name string) int {
 	mut i := names.index(name)
 	if i == -1 {
-		panic('lvar not found')
+		panic('local variable not found')
 	}
 	return -(i + 1)
 }
