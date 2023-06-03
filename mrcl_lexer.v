@@ -70,7 +70,7 @@ fn match_comment(rest string) int {
 fn is_kw(s string) bool {
 	return match s {
 		'func', 'var', 'set', 'call', 'call_set', 'return', 'while', 'case', 'when', '_cmt',
-		'_break' {
+		'_debug' {
 			true
 		}
 		else {
